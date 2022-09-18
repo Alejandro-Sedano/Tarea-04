@@ -3,21 +3,23 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>WebScockets 101</title>
+        <title>Tarea 04</title>
         <script src="https://cdn.socket.io/3.0.3/socket.io.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <link href="/style.css" rel="stylesheet" />
+        <link rel="icon" href="./img/hehe.png">
     </head>
     <body>
 
         <div id="mario-chat">
-            <h2>Mario Chat</h2>
+            <h2>Chat</h2>
             <div id="chat-window">
                 <div id="output"></div>
                 <div id="feedback"></div>
             </div>
-            <input id="handle" type="text" placeholder="Handle" />
-            <input id="message" type="text" placeholder="Message" />
-            <button id="send">Send</button>
+            <input id="handle" type="text" placeholder="Usuario" />
+            <input id="message" type="text" placeholder="Mensaje" />
+            <button id="send">Enviar</button>
         </div>
 
         <script src="/chat.js"></script>
