@@ -3,8 +3,8 @@ var socket = require('socket.io');
 
 // App setup
 var app = express();
-var server = app.listen(4000, function(){
-    console.log('Servidor corriendo en el puerto ', server.address().port);
+var server = app.listen(process.env.port || 4000, function(){
+    console.log('Servidor corriendo en el puerto ',process.env.port || server.address().port);
 });
 
 // Static files
