@@ -4,7 +4,7 @@ var socket = require('socket.io');
 // App setup
 var app = express();
 var server = app.listen(4000, function(){
-    console.log('Escuchando peticiones en el puerto 4000,');
+    console.log('Servidor corriendo en el puerto ', server.address().port);
 });
 
 // Static files
